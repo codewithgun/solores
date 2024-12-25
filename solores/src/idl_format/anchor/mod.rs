@@ -99,7 +99,7 @@ impl IdlFormat for AnchorIdl {
                 BYTEMUCK_CRATE.into(),
                 FeaturesDependencyValue {
                     dependency: DependencyValue(&args.bytemuck_vers),
-                    features: vec!["derive".into()],
+                    features: vec!["derive".into(), "min_const_generics".into()],
                 }
                 .into(),
             );
